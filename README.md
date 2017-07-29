@@ -70,3 +70,7 @@ Add examples usage of:
 
 ### Code coverage (To Do)
 ### Build passing/failing (To Do)
+
+# License
+
+The code is licensed under the [GNU GPLv3](LICENSE.md).
