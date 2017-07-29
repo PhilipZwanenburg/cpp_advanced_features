@@ -1,20 +1,25 @@
 This example demonstrates the basic usage of doxygen.
  
-More detailed information can be found in the [Doxygen manual][doxygen_m].
+More detailed information can be found in the [Doxygen manual].
 
-This is a markdown file used as the mainpage for the project. See the [markdown support page][md_sup] for an
+This is a markdown file used as the mainpage for the project. See the [markdown support page] for an
 introduction to the usage of markdown.
  
 # Library dependencies
  
 - An MPI library (MPICH 3.2 tested).
+```{sh}
+$ sudo apt-get install mpich2 libcr-dev
+```
 - Doxygen (version 1.8.11 tested).
-	- `$ sudo apt-get install doxygen graphviz`
+```{sh}
+$ sudo apt-get install doxygen graphviz
+```
  
  
 # Generating documentation
 
-Note that the required documentation files are already present as part of the project.
+Note that the required documentation directory and files are already present as part of the project.
  
 - Make a documentation directory:
 ```{sh}
@@ -40,7 +45,8 @@ $ doxygen -g doxygen.cfg
 $ doxygen doxygen.cfg
 ```
  
-The generated HTML documentation can be viewed by pointing a HTML browser to the index.html file in the html directory.
+The generated HTML documentation can be viewed by pointing an HTML browser to the 'index.html' file in the html
+directory.
  
  
 # Compiling and executing the code
@@ -56,6 +62,7 @@ $ sh run.sh
 ```
  
  
-<!-- References: (This is an HTML comment block which is hidden from doxygen) --> ---
-	[doxygen_m]: https://www.stack.nl/~dimitri/doxygen/manual/index.html
-	[md_sup]: http://www.stack.nl/~dimitri/doxygen/manual/markdown.html#md_page_header
+<!-- References: (This is an HTML comment block which is hidden from doxygen and markdown) -->
+---
+[Doxygen manual]: https://www.stack.nl/~dimitri/doxygen/manual/index.html
+[markdown support page]: http://www.stack.nl/~dimitri/doxygen/manual/markdown.html#md_page_header
