@@ -37,9 +37,16 @@ $ doxygen -g doxygen.cfg
 	- FILE_PATTERNS          = *.cpp *.hpp *.ipp *.md
 	- RECURSIVE              = YES
 	- USE_MDFILE_AS_MAINPAGE = README.md
+	- SOURCE_BROWSER         = YES (Include links to source code)
+	- HTML_DYNAMIC_SECTIONS  = YES (Fold certain sections of the documentation by default)
 	- HTML_TIMESTAMP         = YES
 	- GENERATE_LATEX         = NO
 	- LATEX_TIMESTAMP        = YES (Will only be used when latex documentation generation is enabled)
+- Strip the comments from the config file if desired (the [configuration section][Doxygen config] of the manual can be
+  consulted for the description of the fields):
+```{sh}
+$ doxygen -s -u doxygen.cfg
+```
 - Run doxygen:
 ```{sh}
 $ doxygen doxygen.cfg
@@ -66,3 +73,4 @@ $ sh run.sh
 ---
 [Doxygen manual]: https://www.stack.nl/~dimitri/doxygen/manual/index.html
 [markdown support page]: http://www.stack.nl/~dimitri/doxygen/manual/markdown.html#md_page_header
+[Doxygen config]: https://www.stack.nl/~dimitri/doxygen/manual/config.html
