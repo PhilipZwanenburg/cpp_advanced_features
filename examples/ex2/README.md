@@ -1,4 +1,4 @@
-This example demonstrates the basic usage of doxygen.
+This example demonstrates the basic usage of Doxygen.
  
 More detailed information can be found in the [Doxygen manual].
 

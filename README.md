@@ -23,7 +23,15 @@ standard." - [MPICH website][MPICH_home]
 
 ##### Examples
 
-- [ex1](examples/ex1/)
+- [ex1]
+- [ex3]
+
+##### To Do
+- building with various options: (after cmake is introduced, likely need to modify [ex1])
+	- ch3:nemesis vs. ch3:sock
+	- --enable-debuginfo
+	- optimization level
+- [Debugging with Totalview](https://wiki.mpich.org/mpich/index.php/Frequently_Asked_Questions#Q:_How_do_I_use_Totalview_with_MPICH.3F)
 
 
 ### Doxygen
@@ -36,8 +44,8 @@ standard." - [MPICH website][MPICH_home]
 
 ##### Examples
 
-- [ex2](examples/ex2/)
-- [ex3](examples/ex3/)
+- [ex2]
+- [ex3]
 
 ##### To Do
 
@@ -47,19 +55,14 @@ Add examples usage of:
 	- link to image ([img def]: /path/to/img.jpg "Optional Title"). Requires an additional '!' before the link
 	  (![img def])
 - [Formula support](https://www.stack.nl/~dimitri/doxygen/manual/formulas.html)
-- [Special commands](https://www.stack.nl/~dimitri/doxygen/manual/commands.html):
-	- \todo
-	- \test
-	- \bug
-	- \depracated
-- bib files
-- [Documentation at other places](https://www.stack.nl/~dimitri/doxygen/manual/docblocks.html#structuralcommands)
 
-### googletest (Traceback, unit testing) (To Do)
 ### cmake (Include library and non-trivial header dependencies, subdirectory tree) (To Do)
+### googletest (Traceback, unit testing) (To Do)
+- combined with CTest, CMake and Boost (see [this SO discussion](https://scicomp.stackexchange.com/questions/8516/any-recommendations-for-unit-testing-frameworks-compatible-with-code-libraries-t)
 ### blas (To Do)
-### Eigen/Hypre/Petsc (To Do)
+### Eigen/Hypre/Petsc/Trilinos (To Do)
 ### Paraview (To Do)
+### Boost
 
 
 # Code Functionality
@@ -79,3 +82,9 @@ Add examples usage of:
 # License
 
 The code is licensed under the [GNU GPLv3](LICENSE.md).
+
+<!-- References: (This is an HTML comment block which is hidden from doxygen and markdown) -->
+---
+[ex1]: examples/ex1/
+[ex2]: examples/ex2/
+[ex3]: examples/ex3/
