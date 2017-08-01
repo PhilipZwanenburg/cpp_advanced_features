@@ -1,7 +1,4 @@
-This example demonstrates the usage of Doxygen special commands and some mpi features.
-
-More detailed information relating to the usage of Doxygen functionality can be found in the [Special Commands] section
-of the Doxygen manual.
+This example demonstrates the usage of Doxygen [Special Commands].
  
 
 In this example, the program is run assuming that two processes are available. In the case of this not being true (i.e.
