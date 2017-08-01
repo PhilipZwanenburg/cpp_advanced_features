@@ -24,7 +24,6 @@ standard." - [MPICH website][MPICH_home]
 ##### Examples
 
 - [ex1]
-- [ex3]
 
 ##### To Do
 - building with various options: (after cmake is introduced, likely need to modify [ex1])
@@ -50,11 +49,7 @@ standard." - [MPICH website][MPICH_home]
 ##### To Do
 
 Add examples usage of:
-- Markdown support:
-	- link to class ([myclass]: @ref MyClass "My class")
-	- link to image ([img def]: /path/to/img.jpg "Optional Title"). Requires an additional '!' before the link
-	  (![img def])
-- [Formula support](https://www.stack.nl/~dimitri/doxygen/manual/formulas.html)
+- [Images (jpg and eps)](https://www.stack.nl/~dimitri/doxygen/manual/commands.html#cmdimage).
 
 ### cmake (Include library and non-trivial header dependencies, subdirectory tree) (To Do)
 ### googletest (Traceback, unit testing) (To Do)
@@ -70,8 +65,9 @@ Add examples usage of:
 ### Code organization into subfolders (To Do)
 ### Dynamic libraries (To Do)
 ### Automatic differentiation (To Do)
-### Templated functions (double/complex) for complex step verification (To Do)
+### Templated functions (double/complex) for complex step verification, Explicit instantiation (To Do)
 ### Flexible data types (float/double) (To Do)
+### Protected vs. Private class members (discussion of library modification without modifying the source)
 
 
 # Github Functionality

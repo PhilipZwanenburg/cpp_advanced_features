@@ -57,8 +57,6 @@ class Dummy_class {
 
 /**	\relates Dummy_class
  *	A non-member function relating to Dummy_class.
- *
- *	\todo Possibly use '\\relatesalso' instead in the future.
  */
 void related_dummy_func ()
 {
@@ -66,6 +64,8 @@ void related_dummy_func ()
 
 /** \relatesalso Dummy_class
  *	A deprecated non-member function relating to Dummy_class.
+ *
+ *	\todo Compare '\\relates' with '\\relatesalso' in the future.
  *
  *	\deprecated Use related_dummy_func instead.
  */

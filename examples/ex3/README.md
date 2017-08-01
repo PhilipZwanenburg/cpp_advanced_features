@@ -9,10 +9,9 @@ running on a uniprocessor machine), the 'node' is being 'oversubscribed' and a d
 observed. In general this should be avoided but it may be required when developing a multiprocessor build on a
 uniprocessor machine. See this [MPICH FAQ answer][MPICH_FAQ_over] for a more detailed explanation of the problem and
 possible remedies.
+
 \todo Move this description to [ex1](../ex1) after adding a README file. At the same time, add installation instructions
 for customized builds.
-
-\todo Resume at 'in-text formula'.
 
 
 # External Dependencies

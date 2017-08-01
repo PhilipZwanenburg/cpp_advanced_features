@@ -27,7 +27,19 @@ using namespace std;
  *	        N otherwise
  *
  *	One of the first goals of the code to be developed will be to replicate some t-spline adaptation results from
- *	Thomas et al. \cite thomas2015.
+ *	Thomas et al. \cite thomas2015. It would also be great to include both in-text formulas (\f$e^{i\pi} = 1\f$) and
+ *	longer out-of-text formulae such as:
+ *
+ *	\f{eqnarray*}{
+ *		g &=& \frac{Gm_2}{r^2} \\
+ *		  &=& \frac{(6.673 \times 10^{-11}\,\mbox{m}^3\,\mbox{kg}^{-1}\,
+ *		      \mbox{s}^{-2})(5.9736 \times 10^{24}\,\mbox{kg})}{(6371.01\,\mbox{km})^2} \\
+ *		  &=& 9.82066032\,\mbox{m/s}^2
+ *	\f}
+ *
+ *	\warning (Repeated from the Doxygen manual) Currently, doxygen is not very fault tolerant in recovering from typos
+ *	in formulae. It may be necessary to remove the file 'formula.repository' that is written to the html directory to
+ *	get rid of an incorrect formula.
  */
 int main
 	(int argc,   ///< represents the number of command line input arguments
