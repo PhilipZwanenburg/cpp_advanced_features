@@ -15,7 +15,7 @@ The examples should generally be reviewed in order as they may assume knowledge 
 ### MPICH
 
 "MPICH is a high performance and widely portable implementation of the [Message Passing Interface (MPI)][MPI_Wikipedia]
-standard." - [MPICH website][MPICH_home]
+standard." -[MPICH website][MPICH_home]
 
 ##### Examples
 
@@ -44,6 +44,20 @@ standard." - [MPICH website][MPICH_home]
 Add examples usage of:
 - [Images (jpg and eps)](https://www.stack.nl/~dimitri/doxygen/manual/commands.html#cmdimage).
 
+
+### CMake
+
+"CMake is an open-source, cross-platform family of tools designed to build, test and package software."
+-[CMake website][CMake_home]
+
+##### Examples
+
+- [ex4]
+
+##### To Do
+- Include library and non-trivial header dependencies
+- Include subdirectory tree
+
 ### Google Test
 
 "Google Test is a unit testing library for the C++ programming language, based on the xUnit architecture."
@@ -51,16 +65,15 @@ Add examples usage of:
 
 ##### Examples
 
-- [ex4]
+- [ex_tmp],
 
 ##### To Do
 - Unit testing
 - Traceback
-- combined with CTest, CMake and Boost (see [this SO discussion](https://scicomp.stackexchange.com/questions/8516/any-recommendations-for-unit-testing-frameworks-compatible-with-code-libraries-t)
+- combined with CTest, CMake and Boost (see [this SO discussion](https://scicomp.stackexchange.com/questions/8516/any-recommendations-for-unit-testing-frameworks-compatible-with-code-libraries-t))
 	- [incorporating into an existing cmake project](https://github.com/google/googletest/tree/master/googletest#incorporating-into-an-existing-cmake-project)
 
 
-### cmake (Include library and non-trivial header dependencies, subdirectory tree) (To Do)
 ### blas (To Do)
 ### Eigen/Hypre/Petsc/Trilinos (To Do)
 ### Paraview (To Do)
@@ -74,7 +87,7 @@ Add examples usage of:
 ### Automatic differentiation (To Do)
 ### Templated functions (double/complex) for complex step verification, Explicit instantiation (To Do)
 ### Flexible data types (float/double) (To Do)
-### Protected vs. Private class members (discussion of library modification without modifying the source)
+### Protected vs. Private class members (discussion of library modification without modifying the source because of allowed inheritance)
 
 
 # Github Functionality
@@ -92,8 +105,10 @@ The code is licensed under the [GNU GPLv3](LICENSE.md).
 [MPI_Wikipedia]: https://en.wikipedia.org/wiki/Message_Passing_Interface
 [Doxygen_home]: http://www.stack.nl/~dimitri/doxygen/
 [wiki_googletest]: https://en.wikipedia.org/wiki/Google_Test
+[CMake_home]: https://cmake.org/
 
 [ex1]: examples/ex1/
 [ex2]: examples/ex2/
 [ex3]: examples/ex3/
 [ex4]: examples/ex4/
+[ex_tmp]: examples/ex_tmp/
