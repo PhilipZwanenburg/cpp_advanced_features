@@ -6,8 +6,34 @@ The order in which the directories should be visited is:
 - step1:
 	- [basic](src/step1/basic/)
 	- [add_header](src/step1/add_header/)
+- step2:
+	- [add_library](src/step2/add_library/)
+		- To compile with `MY_MATH` disabled, run cmake with 
 
-\todo Continue at step2.
+			  $ cmake -DUSE_MYMATH=0 ..
+
+- step3:
+	- [install](src/step3/install/)
+		- To provide the `make install` target, run cmake with
+
+			  $ cmake -DCMAKE_INSTALL_PREFIX=. ..
+
+		- The executable and static library are then generated in the `bin` directory and the header files are generated
+		  in the `include` directory by running `make` with the `install` target:
+
+			  $ make install
+
+		- \todo It seems like all of the files are generated twice when running `make install`. **Is this what is
+		  expected?**
+
+	- [test](src/step3/test/)
+		- After running `cmake` and `make`, ctest can be run in the `build` directory to execute compilation tests:
+
+			  $ ctest
+
+- step4:
+	- [introspection](src/step4/introspect/)
+- steps 5-7: skipped.
 
 
 # External Dependencies

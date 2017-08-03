@@ -1,0 +1,31 @@
+/* {{{
+	This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public
+	License as published by the Free Software Foundation, either version 3 of the License, or any later version.
+
+	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied
+	warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+	details.
+
+	You should have received a copy of the GNU General Public License along with this program. If not, see
+	<http://www.gnu.org/licenses/>.
+}}} */
+
+#ifndef EXAMPLES_MAIN_HPP
+#define EXAMPLES_MAIN_HPP
+/**	\file
+ *	Provide `define`s relating to CMake version parameters.
+ *
+ *	\note Variables in files to be copied with substitutions using CMake's `configure_file` option require that
+ *	      documentation not be placed on the same line as it will be removed during the substitution.
+ */
+
+/// \brief Major version.
+constexpr int VERSION_MAJOR = @Tutorial_VERSION_MAJOR@;
+
+/// \brief Minor version.
+constexpr int VERSION_MINOR = @Tutorial_VERSION_MINOR@;
+
+/// \brief Add cmake `define` for whether the user-implemented math library should be available.
+#cmakedefine USE_MYMATH
+
+#endif

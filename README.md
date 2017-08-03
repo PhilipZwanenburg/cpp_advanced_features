@@ -57,6 +57,8 @@ Add examples usage of:
 ##### To Do
 - Include library and non-trivial header dependencies
 - Include subdirectory tree
+- Look into [CTest](https://cmake.org/Wiki/CMake/Testing_With_CTest) (dashboard)
+- Use `check_function_exists` for: blas functions
 
 ### Google Test
 
