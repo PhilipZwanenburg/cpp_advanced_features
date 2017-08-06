@@ -10,30 +10,16 @@
 	<http://www.gnu.org/licenses/>.
 }}} */
 
+#ifndef EXAMPLES_MAIN_HPP
+#define EXAMPLES_MAIN_HPP
 /**	\file
- *	A simple function used for the cmake tutorial.
+ *	This is an example of how compilation parameters (passed to cmake) are defined for use in the code.
  */
 
-#include <iostream>
-#include <string>
-#include <cmath>
+/// \brief Major version.
+constexpr int VERSION_MAJOR = @Example_VERSION_MAJOR@;
 
-#include "main.hpp"
+/// \brief Minor version.
+constexpr int VERSION_MINOR = @Example_VERSION_MINOR@;
 
-using namespace std;
-
-/// \brief Computes the square root of the input argument.
-int main (int argc, char** argv)
-{
-	if (argc < 2) {
-		cout << "Too few input parameters.\n";
-		return 1;
-	}
-
-	auto input = stod(argv[1]);
-
-	cout << "Version: " << VERSION_MAJOR << '.' << VERSION_MINOR << '\n';
-	cout << "The square root of " << input << " is " << sqrt(input) << "\n";
-
-	return 0;
-}
+#endif

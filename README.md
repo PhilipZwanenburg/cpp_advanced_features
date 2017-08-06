@@ -53,6 +53,7 @@ Add examples usage of:
 ##### Examples
 
 - [ex4]
+- [ex5]
 
 ##### To Do
 - Include library and non-trivial header dependencies
@@ -78,8 +79,11 @@ Add examples usage of:
 
 ### blas (To Do)
 ### Eigen/Hypre/Petsc/Trilinos (To Do)
+- Eigen: Expression templates
 ### Paraview (To Do)
 ### Boost
+### GNU vs Clang (llvm) (Aditya mentioned potentially faster compile times for clang)
+
 
 
 # Code Functionality
@@ -90,7 +94,9 @@ Add examples usage of:
 ### Templated functions (double/complex) for complex step verification, Explicit instantiation (To Do)
 ### Flexible data types (float/double) (To Do)
 ### Protected vs. Private class members (discussion of library modification without modifying the source because of allowed inheritance)
-
+### valarray vs vector
+### Use of restrict
+### Update list of inherited objects through corresponding list of base objects (Not sure if this is possible)
 
 # Github Functionality
 

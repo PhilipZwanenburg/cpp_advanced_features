@@ -4,3 +4,4 @@ a.out
 html/
 latex/
 build/
+include_cmake/

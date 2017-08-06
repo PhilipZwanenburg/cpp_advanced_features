@@ -11,7 +11,7 @@
 }}} */
 
 /**	\file
- *	A simple function used for the cmake tutorial, step 1 (basic).
+ *	A simple function used for the cmake tutorial.
  */
 
 #include <iostream>

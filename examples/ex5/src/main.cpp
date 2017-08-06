@@ -11,7 +11,6 @@
 }}} */
 
 /**	\file
- *	A simple function used for the cmake tutorial.
  */
 
 #include <iostream>
@@ -19,30 +18,13 @@
 #include <cmath>
 
 #include "main.hpp"
-#ifdef USE_MYMATH
-	#include "math_functions.hpp"
-#endif
 
 using namespace std;
 
 /// \brief Computes the square root of the input argument.
 int main (int argc, char** argv)
 {
-	if (argc < 2) {
-		cout << "Too few input parameters.\n";
-		return 1;
-	}
-
-	auto input = stod(argv[1]);
-
-#ifdef USE_MYMATH
-	double output = my_sqrt(input);
-#else
-	double output = sqrt(input);
-#endif
-
-	cout << "Version: " << VERSION_MAJOR << '.' << VERSION_MINOR << '\n';
-	cout << "The square root of " << input << " is " << output << "\n";
+	cout << "This is Ex5 version: " << VERSION_MAJOR << '.' << VERSION_MINOR << '\n';
 
 	return 0;
 }
