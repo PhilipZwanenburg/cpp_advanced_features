@@ -5,3 +5,4 @@ html/
 latex/
 build/
 include_cmake/
+CMakeFiles/

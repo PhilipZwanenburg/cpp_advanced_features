@@ -18,13 +18,29 @@
 #include <cmath>
 
 #include "main.hpp"
+#include "a.hpp"
 
 using namespace std;
 
-/// \brief Computes the square root of the input argument.
+/** \brief Macro to silence `unused variable` compile warning.
+ *
+ *	Taken from [this SO answer][SO_unused].
+ *
+ *	[SO_unused]: https://stackoverflow.com/questions/1486904/how-do-i-best-silence-a-warning-about-unused-variables
+ */
+#define UNUSED(expr) do { (void)(expr); } while (0)
+
+/// \brief Main function.
 int main (int argc, char** argv)
 {
+	UNUSED(argc);
+	UNUSED(argv);
 	cout << "This is Ex5 version: " << VERSION_MAJOR << '.' << VERSION_MINOR << '\n';
+
+	Dog dog1;
+	dog1.colour = "black";
+
+	cout << "Test colour: " << dog1.colour << "\n";
 
 	return 0;
 }
