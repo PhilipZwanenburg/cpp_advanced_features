@@ -1,6 +1,7 @@
 references/*
 a.out
 *.swp
+*.swo
 html/
 latex/
 build/

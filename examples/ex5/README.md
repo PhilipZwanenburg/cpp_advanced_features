@@ -1,14 +1,12 @@
 This example serves to demonstrate the usage of cmake in relation to larger projects where the following features are
 present:
-- Subdirectory source tree;
+- Subdirectory source tree with library generation for each subdirectory.
 - Nested (hidden) header dependencies:
 	- Note that cmake automatically finds header dependencies.
-- \todo update this list and add features.
+- Use of [cmake functions](cmake/functions.cmake).
 
 To improve the organization of the expanded project, the top CMakeLists.txt file is separated into many `*.cmake` files
 to be subsequently included.
-
-\todo Check if files are recompiled when necessary (but only when necessary).
 
 
 # External Dependencies

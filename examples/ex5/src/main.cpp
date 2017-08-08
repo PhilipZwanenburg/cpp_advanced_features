@@ -18,7 +18,9 @@
 #include <cmath>
 
 #include "main.hpp"
-#include "a.hpp"
+#include "printing/print_a.hpp"
+#include "printing/print_ab.hpp"
+#include "math/default_sqrt.hpp"
 
 using namespace std;
 
@@ -37,10 +39,11 @@ int main (int argc, char** argv)
 	UNUSED(argv);
 	cout << "This is Ex5 version: " << VERSION_MAJOR << '.' << VERSION_MINOR << '\n';
 
-	Dog dog1;
-	dog1.colour = "black";
+	print_a();
+	print_ab();
 
-	cout << "Test colour: " << dog1.colour << "\n";
+	const double input = 2.0;
+	cout << "The sqrt of " << input << " is " << default_sqrt(input) << "\n.";
 
 	return 0;
 }
