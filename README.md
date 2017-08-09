@@ -36,8 +36,7 @@ standard." -[MPICH website][MPICH_home]
 
 ##### Examples
 
-- [ex2]
-- [ex3]
+- [ex2], [ex3]
 
 ##### To Do
 
@@ -52,8 +51,7 @@ Add examples usage of:
 
 ##### Examples
 
-- [ex4]
-- [ex5]
+- [ex4], [ex5]
 
 ##### To Do
 - Look into [CTest](https://cmake.org/Wiki/CMake/Testing_With_CTest) (dashboard)
@@ -66,17 +64,16 @@ Add examples usage of:
 
 ##### Examples
 
-- [ex_tmp],
+- [ex6]
 
 ##### To Do
-- Unit testing
 - Traceback
 - combined with CTest, CMake and Boost (see [this SO discussion](https://scicomp.stackexchange.com/questions/8516/any-recommendations-for-unit-testing-frameworks-compatible-with-code-libraries-t))
 	- [incorporating into an existing cmake project](https://github.com/google/googletest/tree/master/googletest#incorporating-into-an-existing-cmake-project)
 
 
-### blas (To Do)
 ### Eigen/Hypre/Petsc/Trilinos (To Do)
+### blas (To Do)
 - Eigen: Expression templates
 ### Paraview (To Do)
 ### Boost
@@ -86,7 +83,6 @@ Add examples usage of:
 
 # Code Functionality
 
-### Code organization into subfolders (To Do)
 ### Dynamic libraries (To Do)
 ### Automatic differentiation (To Do)
 ### Templated functions (double/complex) for complex step verification, Explicit instantiation (To Do)
@@ -117,4 +113,5 @@ The code is licensed under the [GNU GPLv3](LICENSE.md).
 [ex2]: examples/ex2/
 [ex3]: examples/ex3/
 [ex4]: examples/ex4/
-[ex_tmp]: examples/ex_tmp/
+[ex5]: examples/ex5/
+[ex6]: examples/ex6/
