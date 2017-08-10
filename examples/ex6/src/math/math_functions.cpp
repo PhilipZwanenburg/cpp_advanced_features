@@ -26,6 +26,7 @@ double default_sqrt (const double a)
 	return sqrt(a);
 }
 
+/// \test Testing for validity of `sqrt(x)` outside of main.
 TEST(SqrtTest, ValidOutOfMain) {
 	EXPECT_EQ(3.0, sqrt(9.0));
 }

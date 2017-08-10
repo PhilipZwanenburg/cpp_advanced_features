@@ -67,14 +67,25 @@ Add examples usage of:
 - [ex6]
 
 ##### To Do
+- Usage of features outlined in the [Advanced Guide][g_test_adv_guide]:
+	- ::testing::AssertionResult
+	- Teaching Google Test How to Print Your Values
+	- SCOPED_TRACE()
+	- Sharing Resources Between Tests in the Same Test Case
+	- Value Parameterized Tests
+	- Typed Tests
+	- Generating an XML Report
+	- Turning Assertion Failures into Break-Points
+	- Distributing Test Functions to Multiple Machines
 - Traceback
 - combined with CTest, CMake and Boost (see [this SO discussion](https://scicomp.stackexchange.com/questions/8516/any-recommendations-for-unit-testing-frameworks-compatible-with-code-libraries-t))
 	- [incorporating into an existing cmake project](https://github.com/google/googletest/tree/master/googletest#incorporating-into-an-existing-cmake-project)
 
+[g_test_adv_guide]: https://github.com/google/googletest/blob/master/googletest/docs/AdvancedGuide.md
 
 ### Eigen/Hypre/Petsc/Trilinos (To Do)
-### blas (To Do)
 - Eigen: Expression templates
+### blas (To Do)
 ### Paraview (To Do)
 ### Boost
 ### GNU vs Clang (llvm) (Aditya mentioned potentially faster compile times for clang)

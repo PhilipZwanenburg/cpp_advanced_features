@@ -34,11 +34,13 @@ using namespace std;
  */
 #define UNUSED(expr) do { (void)(expr); } while (0)
 
+/// \test Testing for validity of `sqrt(x)`.
 TEST(SqrtTest, Valid) {
 	EXPECT_EQ(1.0, sqrt(1.0));
 	EXPECT_EQ(2.0, sqrt(4.0));
 }
 
+/// \test Testing for validity of `sqrt(0.0)`.
 TEST(SqrtTest, Zero) {
 	EXPECT_EQ(0.0, sqrt(0.0));
 }
