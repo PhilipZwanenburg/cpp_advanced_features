@@ -43,6 +43,10 @@ standard." -[MPICH website][MPICH_home]
 Add examples usage of:
 - [Images (jpg and eps)](https://www.stack.nl/~dimitri/doxygen/manual/commands.html#cmdimage).
 
+Presentation:
+- See the boostorg/hana [github](https://github.com/boostorg/hana/tree/master/doc) and doxygen generated
+  [html](http://www.boost.org/doc/libs/1_62_0/libs/hana/doc/html/index.html) for an example of a professional project.
+
 
 ### CMake
 
@@ -77,17 +81,33 @@ Add examples usage of:
 	- Generating an XML Report
 	- Turning Assertion Failures into Break-Points
 	- Distributing Test Functions to Multiple Machines
-- Traceback
 - combined with CTest, CMake and Boost (see [this SO discussion](https://scicomp.stackexchange.com/questions/8516/any-recommendations-for-unit-testing-frameworks-compatible-with-code-libraries-t))
 	- [incorporating into an existing cmake project](https://github.com/google/googletest/tree/master/googletest#incorporating-into-an-existing-cmake-project)
 
 [g_test_adv_guide]: https://github.com/google/googletest/blob/master/googletest/docs/AdvancedGuide.md
+
+### CDash, CTest, valgrind, gcov
 
 ### Eigen/Hypre/Petsc/Trilinos (To Do)
 - Eigen: Expression templates
 ### blas (To Do)
 ### Paraview (To Do)
 ### Boost
+
+#### [Github](https://github.com/boostorg)
+
+- stacktrace
+
+#### [Online Documentation](http://www.boost.org/doc/libs/1_64_0/doc/html/)
+
+- Math
+	- special functions
+	- complex number functions
+	- quaternion (hobby: 3D rotation investigation)
+	- root finding, Polynomial and Rational Function Evaluation
+- Intrusive
+- MPI
+
 ### GNU vs Clang (llvm) (Aditya mentioned potentially faster compile times for clang)
 
 
@@ -95,6 +115,7 @@ Add examples usage of:
 # Code Functionality
 
 ### Dynamic libraries (To Do)
+### Intrusive containers.
 ### Automatic differentiation (To Do)
 ### Templated functions (double/complex) for complex step verification, Explicit instantiation (To Do)
 ### Flexible data types (float/double) (To Do)

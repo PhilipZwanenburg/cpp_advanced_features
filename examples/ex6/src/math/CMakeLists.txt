@@ -1,4 +1,8 @@
-add_library(MathFunctions math_functions.cpp)
-target_link_libraries(MathFunctions PRIVATE gtest_main)
+cmake_minimum_required(VERSION 3.5.1)
 
-add_to_env(EXTRA_LIBS MathFunctions)
+project(MathFunctions)
+
+add_library(${PROJECT_NAME} math_functions.cpp)
+target_link_libraries(${PROJECT_NAME} PRIVATE gtest_main)
+
+add_to_env(EXTRA_LIBS ${PROJECT_NAME})
